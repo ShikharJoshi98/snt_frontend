@@ -60,8 +60,8 @@ export default function Main() {
                                 <span className="flex items-center mt-5 text-zinc-500 font-semibold gap-1 px-3"><FaBriefcase className="text-[#525fe1]" />{course?.jobOpportunities}</span>
                                 <div className="w-[80%] h-[0.5px] my-5 bg-gray-400 mx-auto"></div>
                                 <div className="flex items-center justify-between px-3 mt-auto">
-                                    <Link href={`/Courses/${(course?.course).replace(/\s+/g, "-")}/${course?.id}`}><SmallButton text="Read More" /></Link>
-                                    <Link href={`/Courses/${(course?.course).replace(/\s+/g, "-")}/${course?.id}`} className="relative group w-fit text-sm sm:text-base cursor-pointer duration-300 py-3 px-5 text-[#525fe1] flex items-center gap-3 font-semibold rounded-lg">Enroll Now <FaArrowRight /><span className="absolute left-5 bottom-2 h-0.5 w-0 bg-[#525fe1] transition-all duration-300 group-hover:w-[60%]"></span></Link>
+                                    <Link href={`/Courses/${course?.id}`}><SmallButton text="Read More" /></Link>
+                                    <Link href={`/Courses/${course?.id}`} className="relative group w-fit text-sm sm:text-base cursor-pointer duration-300 py-3 px-5 text-[#525fe1] flex items-center gap-3 font-semibold rounded-lg">Enroll Now <FaArrowRight /><span className="absolute left-5 bottom-2 h-0.5 w-0 bg-[#525fe1] transition-all duration-300 group-hover:w-[60%]"></span></Link>
                                 </div>
                             </div>
                         ))}

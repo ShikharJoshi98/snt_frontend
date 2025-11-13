@@ -1,9 +1,10 @@
 'use client'
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { useState } from "react";
+import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
+import CourseModal from "./CourseModal";
 
 export const footerLinks = [
     { title: "Explore", links: ["Home", "About Us", "Tutorials", "Courses"] },
@@ -29,7 +30,6 @@ export default function Footer() {
                     <ul className="space-y-3 text-gray-300">
                         <li className="cursor-pointer hover:text-white duration-300"><Link href="/Main">Home</Link></li>
                         <li className="cursor-pointer hover:text-white duration-300"><Link href="/AboutUs">About Us</Link></li>
-                        <li className="cursor-pointer hover:text-white duration-300"><Link href="/Blog">Blogs</Link></li>
                         <li onClick={() => setCourseModal(true)} className="cursor-pointer hover:text-white duration-300">Courses</li>
                     </ul>
                 </div>
@@ -52,7 +52,7 @@ export default function Footer() {
             <div className="text-center text-sm mt-15 text-gray-400">
                 <p>&copy; 2025 SNT Supernet Technologies Pvt. Ltd. All rights reserved</p>
             </div>
-            {/* {isCourseModal && <CourseModal onClose={() => setCourseModal(false)} />} */}
+            {isCourseModal && <CourseModal onClose={() => setCourseModal(false)} />}
         </footer>
     )
 }
