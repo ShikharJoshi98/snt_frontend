@@ -31,35 +31,35 @@ export const testimonial = [
 export const aboutInfoArray = [
     { title: "2011", desc: "Year Est." },
     { title: "15K+", desc: "Learners" },
-    { title: "5+", desc: "Courses" },
+    { title: "50+", desc: "Courses" },
     { title: "100+", desc: "Cohorts" },
 ];
 
 export const topCourses = [
   {
-    id: 1,
-    course: "Full-Stack Cloud Developer Program",
-    courseImage: "/full-stack-development.png",
+    id: 3,
+    course: "Spring Boot Web Services & JPA Masterclass",
+    courseImage: "/spingbootJPA.png",
     courseDuration: "12–16 Weeks",
     incomeRange: "₹6–15 LPA",
     jobOpportunities:"1.08 lac+ jobs/Internship Opportunities"
   },
   {
-    id: 2,
-    course: "Cloud & DevOps Engineer Program",
+    id: 6,
+    course: "AI Agents Masterclass",
     courseImage:
-      "/devops-1.webp",
+      "/aiAgentCourse.png",
     courseDuration: "12–16 Weeks",
-    incomeRange: "₹7–18 LPA",
+    incomeRange: "₹8–25 LPA",
     jobOpportunities:
       "50k+ internship/job opportunities"
   },
   {
-    id: 3,
-    course: "Cybersecurity & DevSecOps",
-    courseImage: "/devsecops-project-development-concept-young-600nw-2592400165.webp",
-    courseDuration: "10–14 Weeks",
-    incomeRange: "₹6–16 LPA",
+    id: 5,
+    course: "Machine Learning",
+    courseImage: "/MachineLearningCourse.png",
+    courseDuration: "16–18 Weeks",
+    incomeRange: "₹6–20 LPA",
     jobOpportunities:
       "50k+ jobs/internship Opportunities"
   }
